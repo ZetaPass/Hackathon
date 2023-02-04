@@ -1,15 +1,21 @@
 import React from 'react'
 import './Sidebar.css';
+
  function Sidebar() {
   return (
     <>
      <div className='side_bar_container'>
        <div className='profile'></div>
-        <div class="sidebar">
-          <a class="active" href="#home">Home</a>
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
+        <div className="sidebar">
+          <div className='Home'>
+          <span class="material-symbols-outlined" > home</span>
+          <a className="active" href="#home">Home</a></div>
+          <span class="material-symbols-outlined" > home</span>
+          <a href="#Courses">Courses</a>
+          <span class="material-symbols-outlined" > home</span>
+          <a href="#Event">Event</a>
+          <span class="material-symbols-outlined" > home</span>
+          <a href="#Blogs">Blogs</a>
         </div>
      </div>
     </>
