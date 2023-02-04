@@ -6,7 +6,7 @@ import { Routes,Route } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
-import {Home,Events,Courses,Blogs} from './pages'
+import {Home,Events,Courses,Blogs,NotFound} from './pages'
 
 export default function App(){
   return(
