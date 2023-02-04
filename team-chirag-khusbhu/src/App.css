@@ -12,7 +12,7 @@ body {
   background-color: black;
   font-family: "Red Rose", cursive;
   color: white;
-  position: relative;
+  position: static;
   overflow: hidden;
   display: flex;
   /* backdrop-filter: blur(16px) saturate(180%);
@@ -51,16 +51,16 @@ body {
   top: 1256px;
 }
 
-.sidebar {
+/* .sidebar {
   width: 400px;
   height: 982px;
-}
+} */
 
 nav.navbar {
   min-width: 1050px;
   height: 10%;
   display: flex;
-  padding-inline: 10rem;
+  padding-inline: 5rem;
   justify-content: space-between;
   align-items: center;
   background-color: black;

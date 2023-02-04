@@ -4,11 +4,11 @@ import './Sidebar.css';
  function Sidebar() {
   return (
     <>
-     
-       
         <div className="sidebar">
-          <div className='profile'></div>
-          
+          <div className='profile'>
+            <div className='Profile_Gradient'></div>
+            <div className='Profile_image'></div>
+          </div>
           <span class="material-symbols-outlined" > home</span>
           <a className="active" href="#home">Home</a>
           <span class="material-symbols-outlined" > home</span>
@@ -17,7 +17,6 @@ import './Sidebar.css';
           <a href="#Event">Event</a>
           <span class="material-symbols-outlined" > home</span>
           <a href="#Blogs">Blogs</a>
-        
      </div>
     </>
   )
