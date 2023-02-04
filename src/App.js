@@ -5,7 +5,6 @@ import {
   useLocation,
   useNavigationType,
 } from "react-router-dom";
-import UserDashboard1 from "../src/pages/UserDashboard1";
 import UserDashboard from "./pages/UserDashboard";
 
 function App() {

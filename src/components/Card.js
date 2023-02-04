@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 
-export function Card({ text,description }) {
+export function Card({ text, description }) {
   return (
     <div className="relative h-[19.94rem] w-[23.31rem] shrink-0 overflow-hidden rounded-small shadow-[-24px_20px_20px_rgba(0,_0,_0,_0.45)] [background:linear-gradient(-53.82deg,_rgba(0,_0,_0,_0.25),_rgba(255,_255,_255,_0.25))] [backdrop-filter:blur(25px)]">
       <img
@@ -12,9 +12,10 @@ export function Card({ text,description }) {
         {text}
       </div>
       <Button
-        className="absolute right-[1.31rem] bottom-[2.06rem]"
-        variant="contained"
-        color="primary"
+        className="text-2xlborder-secondaryGradient absolute right-[1.31rem] bottom-[2.06rem] h-[2.81rem] w-[8.5rem] rounded-full border-4 text-white"
+        variant="outlined"
+        text="outlined"
+        textTransform="none"
       >
         {description}
       </Button>
