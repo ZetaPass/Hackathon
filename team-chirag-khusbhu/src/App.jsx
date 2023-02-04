@@ -1,33 +1,13 @@
-<<<<<<< HEAD
+// <<<<<<< HEAD
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-=======
+// =======
 import { Routes,Route } from 'react-router-dom'
->>>>>>> 5d06f22db68d335f74f9d0eedc0f127243fa3774
+// >>>>>>> 5d06f22db68d335f74f9d0eedc0f127243fa3774
 import './App.css'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import {Home,Events,Courses,Blogs} from './pages'
 
-<<<<<<< HEAD
-function App() {
- 
-
-  return (
-    <div className="App">
-      <Sidebar/>
-      <Navbar/>
-      <Card/>
-      <BrowserRouter>
-      <Routes>
-      <Route path="/" element={<Home/>}/>
-         <Route path="Blogs" element={<Blogs/>}/>
-          <Route path="Courses" element={<Courses/>}/>
-           <Route path="Events" element={<Events/>}/>
-            <Route path="*" element={<Error/>}/>
-      </Routes>
-      </BrowserRouter>
-    </div>
-=======
 export default function App(){
   return(
     <>
@@ -46,6 +26,5 @@ export default function App(){
         </Routes>
       </main>
     </>
->>>>>>> 5d06f22db68d335f74f9d0eedc0f127243fa3774
   )
 }
