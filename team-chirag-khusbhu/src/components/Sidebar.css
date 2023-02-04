@@ -9,23 +9,13 @@ body {
 }
 
 .profile {
-  height: 30%;
-  width: 20%;
-  background-image: linear-gradient(red, black);
+  height: 50px;
+  width: 50px;
   border: white;
 }
 
 .Home {
   display: inline;
-}
-.sidebar {
-  margin: 0;
-  padding-left: 2%;
-  width: 200px;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-  border: white;
 }
 
 .sidebar a {

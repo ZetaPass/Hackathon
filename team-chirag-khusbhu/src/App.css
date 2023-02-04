@@ -50,11 +50,11 @@ body {
   left: 1123px;
   top: 1256px;
 }
-/* 
+
 .sidebar {
-  width: 352px;
+  width: 400px;
   height: 982px;
-} */
+}
 
 nav.navbar {
   min-width: 1050px;
@@ -91,6 +91,7 @@ nav.navbar button {
 main {
   display: flex;
   flex-direction: column;
+  width: 80%;
 }
 /* <<<<<<< HEAD
 >>>>>>> 5d06f22db68d335f74f9d0eedc0f127243fa3774
