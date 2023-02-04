@@ -11,6 +11,7 @@ body {
   color: white;
   position: relative;
   overflow: hidden;
+  display: flex;
   /* backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%); */
   background-color: black;
@@ -41,4 +42,15 @@ body {
   height: 550px;
   left: 1123px;
   top: 1256px;
+}
+.sidebar{
+  width: 352px;
+  height: 982px;
+}
+.navbar{
+  height: 80px;
+}
+main{
+  display: flex;
+  flex-direction: column;
 }
