@@ -52,7 +52,98 @@ body {
 .sidebar {
   width: 352px;
   height: 982px;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr 2fr 1fr;
+  padding: 1.5rem 2rem;
+  background: rgba(0, 0, 0, 0.66);
+  border-right: 1px solid #3c3c3c;
+  box-shadow: 14px 0px 30px rgba(0, 0, 0, 0.5);
 }
+
+.sidebar > div:nth-of-type(1) {
+  position: relative;
+  border: gray 1px solid;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.sidebar > div:nth-of-type(1)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  position: absolute;
+  height: 390px;
+  left: -48px;
+  right: -48px;
+  top: -240px;
+  z-index: -10;
+
+  background: linear-gradient(162.03deg, #eb0cd5 27.1%, #e52727 60.96%);
+  transform: rotate(-90deg);
+  border-radius: 50%;
+}
+
+.sidebar > div:nth-of-type(1) h3 {
+  font-size: 20px;
+}
+
+.sidebar > div:nth-of-type(1) h4 {
+  font-size: 14px;
+}
+
+.profile {
+  height: 6.25rem;
+  width: 6.25rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.sidebar > nav {
+  height: 100%;
+  width: 100%;
+}
+.sidebar  nav ul{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0;
+}
+.sidebar  nav ul a{
+  height: 56px;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  /* justify-content: center; */
+  gap: 1rem;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 10px;
+  font-size: 1rem;
+  padding-left: 1rem;
+  color: white;
+}
+.sidebar  nav ul a:focus{
+  background-color: white;
+  color: black;
+}
+/* .sidebar > div:nth-of-type(3){
+  width: 100%;
+  height: 100%;
+} */
 
 nav.navbar {
   min-width: 1088px;
@@ -97,32 +188,41 @@ main > div {
   padding-inline: 2rem;
 }
 
-.carousel{
+.carousel {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc(100%/2.5);
+  grid-auto-columns: calc(100% / 2.5);
   gap: 1.5rem;
   width: 1088px;
   overflow-x: scroll;
 }
-.carousel::-webkit-scrollbar{
+
+.carousel::-webkit-scrollbar {
   width: 0px;
   height: 0px;
 }
-.heading{
+
+.heading {
   display: flex;
   width: 1088px;
   justify-content: space-between;
+  align-items: center;
   isolation: isolate;
 }
-.heading Link{
+
+.heading Link {
   text-decoration: none;
   font-size: 0.5rem;
 }
+
 .card {
   width: 373px;
   height: 319px;
-  background: linear-gradient(306.18deg, rgba(0, 0, 0, 0.25) 0%, rgba(255, 255, 255, 0.25) 100%);
+  background: linear-gradient(
+    306.18deg,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(255, 255, 255, 0.25) 100%
+  );
   box-shadow: -24px 20px 20px rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(12.5px);
   border-radius: 9px;
@@ -130,28 +230,32 @@ main > div {
   flex-direction: column;
   justify-content: space-evenly;
 }
-.card > div:nth-of-type(1){
+
+.card > div:nth-of-type(1) {
   padding: 1rem;
 }
-.card-description{
+
+.card-description {
   display: flex;
   justify-content: space-between;
-  margin-inline:1rem;
+  margin-inline: 1rem;
   align-items: center;
 }
-.card-description h2{
+
+.card-description h2 {
   font-size: 40px;
 }
-.card-description > div{
+
+.card-description > div {
   width: 150px;
   height: 40px;
   display: grid;
   place-items: center;
   border-radius: 50px;
-  background: linear-gradient(180deg, #00F0FF 0%, #0075FF 100%);
-  
+  background: linear-gradient(180deg, #00f0ff 0%, #0075ff 100%);
 }
-.card-description > div button{
+
+.card-description > div button {
   width: 148px;
   height: 38px;
   background-color: black;
@@ -159,9 +263,14 @@ main > div {
   border-radius: 50px;
   transition: all 0.3s ease-in;
 }
-.card-description > div button:hover{
+
+.card-description > div button:hover {
   background-color: transparent;
 }
-section{
-  margin-block: 1rem;
+
+section {
+  margin-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
