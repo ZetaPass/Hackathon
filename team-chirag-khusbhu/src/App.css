@@ -47,8 +47,35 @@ body {
   width: 352px;
   height: 982px;
 }
-.navbar{
+nav.navbar{
+  width: 1088px;
   height: 80px;
+  display: flex;
+  padding-inline: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  position: relative;
+  z-index: 10;
+}
+nav.navbar div h1{
+  background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+nav.navbar button{
+  background-color: black;
+  color: #A6A6A6;
+  border: none;
+  font-size: 1.5rem;
+
 }
 main{
   display: flex;
