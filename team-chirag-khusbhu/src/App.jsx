@@ -1,5 +1,5 @@
 // <<<<<<< HEAD
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+// import {BrowserRouter, Routes, Route} from 'react-router-dom';
 // =======
 import { Routes,Route } from 'react-router-dom'
 // >>>>>>> 5d06f22db68d335f74f9d0eedc0f127243fa3774
