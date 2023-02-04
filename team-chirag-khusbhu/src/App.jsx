@@ -22,6 +22,7 @@ export default function App(){
           <Route path='/events' element={<Events/>} />
           <Route path='/courses' element={<Courses/>} />
           <Route path='/blogs' element={<Blogs/>} />
+          <Route path="*" element={<NotFound />} />
 
         </Routes>
       </main>
