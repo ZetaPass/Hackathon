@@ -1,5 +1,8 @@
+// Dependencies
 import { Link } from "react-router-dom";
-import styles from "./sidebar.module.css";
+
+// Styles
+import styles from "./styles/sidebar.module.css";
 
 function Sidebar() {
   return (

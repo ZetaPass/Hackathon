@@ -1,11 +1,16 @@
+// Dependencies
 import { Link } from "react-router-dom";
-import Card from "./Card";
 import { useState } from "react";
 
+// Components
+import Card from "./Card";
+
 const Carousel = ({ type, link, array, sliceNumber }) => {
+
   const [view, setView] = useState(false);
   const className = view ? "carousel-flex" : "carousel";
   const slice = view ? sliceNumber : 5;
+
   return (
     <section>
       <div className="heading">

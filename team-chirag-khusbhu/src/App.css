@@ -73,6 +73,15 @@ section {
   overflow-x: scroll;
 }
 
+.carousel-flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5rem;
+  width: 1088px;
+}
+
 .carousel::-webkit-scrollbar {
   width: 5px;
   height: 5px;
@@ -92,66 +101,8 @@ section {
   font-size: 1rem;
 }
 
-.card {
-  width: 373px;
-  height: 319px;
-  background: linear-gradient(306.18deg,
-      rgba(0, 0, 0, 0.25) 0%,
-      rgba(255, 255, 255, 0.25) 100%);
-  box-shadow: -24px 20px 20px rgba(0, 0, 0, 0.45);
-  backdrop-filter: blur(12.5px);
-  border-radius: 9px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.card>div:nth-of-type(1) {
-  padding: 1rem;
-}
-
-.card-description {
-  display: flex;
-  justify-content: space-between;
-  margin-inline: 1rem;
-  align-items: center;
-}
-
-.card-description h2 {
-  font-size: 40px;
-}
-
-.card-description>div {
-  width: 150px;
-  height: 40px;
-  display: grid;
-  place-items: center;
-  border-radius: 50px;
-  background: linear-gradient(180deg, #00f0ff 0%, #0075ff 100%);
-}
-
-.card-description>div button {
-  width: 148px;
-  height: 38px;
-  background-color: black;
-  color: white;
-  border-radius: 50px;
-  transition: all 0.3s ease-in;
-}
-
-.card-description>div button:hover {
-  background-color: transparent;
-}
 .faq,.services,.setting  {
   width: 1000px;
   text-align: justify;
   line-break: strict;
 } 
-.carousel-flex{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 5rem;
-  width: 1088px;
-}
