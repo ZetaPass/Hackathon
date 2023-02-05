@@ -141,3 +141,9 @@ section {
 .card-description>div button:hover {
   background-color: transparent;
 }
+
+.faq,.services,.setting > ul,p {
+  width: 1000px;
+  text-align: justify;
+  line-break: strict;
+}

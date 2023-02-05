@@ -1,12 +1,8 @@
-// <<<<<<< HEAD
-// import {BrowserRouter, Routes, Route} from 'react-router-dom';
-// =======
 import { Routes,Route } from 'react-router-dom'
-// >>>>>>> 5d06f22db68d335f74f9d0eedc0f127243fa3774
 import './App.css'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
-import {Home,Events,Courses,Blogs,NotFound} from './pages'
+import {Home,Events,Courses,Blogs,NotFound,Settings,Services,FAQ} from './pages'
 
 export default function App(){
   return(
@@ -23,6 +19,9 @@ export default function App(){
           <Route path='/events' element={<Events/>} />
           <Route path='/courses' element={<Courses/>} />
           <Route path='/blogs' element={<Blogs/>} />
+          <Route path='/settings' element={<Settings/>} />
+          <Route path='/services' element={<Services/>} />
+          <Route path='/faq' element={<FAQ/>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         </div>

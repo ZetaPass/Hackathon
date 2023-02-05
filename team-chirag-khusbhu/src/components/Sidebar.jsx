@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import styles from "./sidebar.module.css"
 
+
 function Sidebar() {
+
   return (
     <>
       <aside className={styles.sidebar}>
@@ -18,36 +20,36 @@ function Sidebar() {
 
         <nav>
           <ul>
-            <Link to="/" active>
-              <i class="ri-home-4-fill"></i>
-              <span>Home</span>
+            <Link to="/">
+              <i className="ri-home-4-fill"></i>
+              <span >Home</span>
             </Link>
             <Link to="/courses">
-              <i class="ri-home-4-fill"></i>
+              <i className="ri-home-4-fill"></i>
               <span>Courses</span>
             </Link>
             <Link to="/events">
-              <i class="ri-home-4-fill"></i>
+              <i className="ri-home-4-fill"></i>
               <span>Events</span>
             </Link>
             <Link to="/blogs">
-              <i class="ri-home-4-fill"></i>
+              <i className="ri-home-4-fill"></i>
               <span>Blogs</span>
             </Link>
           </ul>
         </nav>
         <nav>
           <ul>
-          <Link to="/">
-            <i class="ri-home-4-fill"></i>
+          <Link to="/settings">
+            <i className="ri-home-4-fill"></i>
             <span>Settings</span>
           </Link>
-          <Link to="/">
-            <i class="ri-home-4-fill"></i>
+          <Link to="/services">
+            <i className="ri-home-4-fill"></i>
             <span>Services</span>
           </Link>
-          <Link to="/">
-            <i class="ri-home-4-fill"></i>
+          <Link to="/faq">
+            <i className="ri-home-4-fill"></i>
             <span>Helps and FAQ</span>
           </Link>
           </ul>
