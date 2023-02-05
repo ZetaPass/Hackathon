@@ -1,15 +1,16 @@
-import styles from "./navbar.module.css"
+import styles from "./navbar.module.css";
 
 const Navbar = () => {
-    return (
-      
-      <header className={styles.header}>
-        <div>
-          <h1>ZETAPASS</h1>
-        </div>
-        <button><i className="ri-notification-fill"></i></button>
-      </header>
-    )
-  }
+  return (
+    <header className={styles.header}>
+      <div>
+        <h1>ZETAPASS</h1>
+      </div>
+      <button>
+        <i className="ri-notification-fill"></i>
+      </button>
+    </header>
+  );
+};
 
-export default Navbar
+export default Navbar;

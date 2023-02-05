@@ -1,5 +1,9 @@
 # Team Chirag and Khusbhu
-- We are making it optimized just for the desktop(1440px)
+- This site is currently optimized for desktop only (1440px)
 
-## Steps
-- We made the gradient balls available in the background.
+This Particular Project is hosted here [site](https://zetapass-hackathon.netlify.app/)
+
+## Here's what that make our project unique
+
+
+![project-img](./public/project-img.png)
