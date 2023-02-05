@@ -82,6 +82,7 @@ section {
   display: flex;
   width: 1088px;
   justify-content: space-between;
+  gap: 10rem;
   align-items: center;
   isolation: isolate;
 }
@@ -141,9 +142,8 @@ section {
 .card-description>div button:hover {
   background-color: transparent;
 }
-
-.faq,.services,.setting > ul,p {
+.faq,.services,.setting  {
   width: 1000px;
   text-align: justify;
   line-break: strict;
-}
+} 
