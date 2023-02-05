@@ -10,6 +10,7 @@ This Particular Project is hosted here [site](https://zetapass-hackathon.netlify
 - **Use of Semantic HTML**: Semantic HTML is an important best practice for web development, as it provides a clear and well-defined structure for your content, improves accessibility, search ranking, styling, and maintainability, and enhances the overall quality and usability of your website.
 ![semantic html](./public/semantic.png)
 - **Use of react-router-dom**: We have used [`react-router-dom`](https://reactrouter.com/en/main) for routing purposes. It provides a set of components and functions that allow us to define and manage the different routes and navigation paths in our application. By using [`react-router-dom`](https://reactrouter.com/en/main) for routing purposes, we have been able to create a flexible and scalable navigation system for our React application, providing a superior user experience and improved maintainability.
+- **Use Of Comments**: We have used comments in the code, but we have not overused them in order to avoid confusion. Comments are an important tool for documenting and explaining the code, but too many comments can actually make the code harder to read and understand.
 - **Hosted the Site**: We have hosted the website so that you don't have to run it on your local machine to see it in action. We have made it more convenient, accessible, collaborative, and scalable.
 
 ![project-img](./public/project-img.png)
