@@ -8,18 +8,21 @@ const Home = () => {
     <>
     <Carousel
       type={"Events"}
-      link={"/events"}
+      link={"/"}
       array={events}
+      sliceNumber={9}
     />
     <Carousel
       type={"Courses"}
-      link={"/courses"}
+      link={"/"}
       array={courses}
+      sliceNumber={10}
     />
     <Carousel
       type={"Blogs"}
-      link={"/blogs"}
+      link={"/"}
       array={blogs}
+      sliceNumber={6}
     />
     </>
   );

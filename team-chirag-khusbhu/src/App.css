@@ -147,3 +147,11 @@ section {
   text-align: justify;
   line-break: strict;
 } 
+.carousel-flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5rem;
+  width: 1088px;
+}

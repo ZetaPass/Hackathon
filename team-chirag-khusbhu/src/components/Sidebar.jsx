@@ -1,16 +1,14 @@
 import { Link } from "react-router-dom";
-import styles from "./sidebar.module.css"
-
+import styles from "./sidebar.module.css";
 
 function Sidebar() {
-
   return (
     <>
       <aside className={styles.sidebar}>
         <div>
           <div className={styles.profile}>
             <img
-              src="https://images.pexels.com/photos/6918619/pexels-photo-6918619.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+              src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80"
               alt="human"
             />
           </div>
@@ -22,7 +20,7 @@ function Sidebar() {
           <ul>
             <Link to="/">
               <i className="ri-home-4-fill"></i>
-              <span >Home</span>
+              <span>Home</span>
             </Link>
             <Link to="/courses">
               <i className="ri-home-4-fill"></i>
@@ -40,18 +38,18 @@ function Sidebar() {
         </nav>
         <nav>
           <ul>
-          <Link to="/settings">
-            <i className="ri-home-4-fill"></i>
-            <span>Settings</span>
-          </Link>
-          <Link to="/services">
-            <i className="ri-home-4-fill"></i>
-            <span>Services</span>
-          </Link>
-          <Link to="/faq">
-            <i className="ri-home-4-fill"></i>
-            <span>Helps and FAQ</span>
-          </Link>
+            <Link to="/settings">
+              <i className="ri-home-4-fill"></i>
+              <span>Settings</span>
+            </Link>
+            <Link to="/services">
+              <i className="ri-home-4-fill"></i>
+              <span>Services</span>
+            </Link>
+            <Link to="/faq">
+              <i className="ri-home-4-fill"></i>
+              <span>Helps and FAQ</span>
+            </Link>
           </ul>
         </nav>
       </aside>
