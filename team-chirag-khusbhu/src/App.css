@@ -1,0 +1,108 @@
+/* Base CSS stylings */
+body {
+  display: grid;
+  place-items: center;
+  background-color: #252627;
+}
+
+#root {
+  width: 1440px;
+  height: 982px;
+  background-color: black;
+  font-family: "Red Rose", cursive;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  background-color: black;
+}
+
+.gradient {
+  position: absolute;
+  background: linear-gradient(161.65deg, #eb0cd5 -3.34%, #e52727 69.8%);
+  border-radius: 50%;
+  filter: blur(6rem);
+}
+
+.ball-1 {
+  width: 342px;
+  height: 342px;
+  left: 1256px;
+  top: -2px;
+}
+
+.ball-2 {
+  width: 454px;
+  height: 458px;
+  left: 334px;
+  top: 590px;
+  filter: blur(8rem);
+}
+
+.ball-3 {
+  width: 529px;
+  height: 550px;
+  left: 1123px;
+  top: 1256px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main>div {
+  width: 100%;
+  padding-inline: 2rem;
+  overflow-y: scroll;
+}
+
+section {
+  margin-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(100% / 2.5);
+  gap: 1.5rem;
+  width: 1088px;
+  overflow-x: scroll;
+}
+
+.carousel-flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5rem;
+  width: 1088px;
+}
+
+.carousel::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.heading {
+  display: flex;
+  width: 1088px;
+  justify-content: space-between;
+  gap: 10rem;
+  align-items: center;
+  isolation: isolate;
+}
+
+.heading a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.faq,.services,.setting  {
+  width: 1000px;
+  text-align: justify;
+  line-break: strict;
+} 
