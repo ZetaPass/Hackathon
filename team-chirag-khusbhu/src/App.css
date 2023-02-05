@@ -1,3 +1,4 @@
+/* Base CSS stylings */
 body {
   display: grid;
   place-items: center;
@@ -13,11 +14,7 @@ body {
   position: relative;
   overflow: hidden;
   display: flex;
-  /* backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%); */
   background-color: black;
-  /* border-radius: 12px; */
-  /* border: 1px solid rgba(255, 255, 255, 0.125); */
 }
 
 .gradient {
@@ -49,145 +46,22 @@ body {
   top: 1256px;
 }
 
-.sidebar {
-  width: 352px;
-  height: 982px;
-  display: grid;
-  place-items: center;
-  grid-template-rows: 1fr 2fr 1fr;
-  padding: 1.5rem 2rem;
-  background: rgba(0, 0, 0, 0.66);
-  border-right: 1px solid #3c3c3c;
-  box-shadow: 14px 0px 30px rgba(0, 0, 0, 0.5);
-}
-
-.sidebar > div:nth-of-type(1) {
-  position: relative;
-  border: gray 1px solid;
-  border-radius: 10px;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  isolation: isolate;
-  overflow: hidden;
-}
-
-.sidebar > div:nth-of-type(1)::after {
-  content: "";
-  display: block;
-  position: absolute;
-  position: absolute;
-  height: 390px;
-  left: -48px;
-  right: -48px;
-  top: -240px;
-  z-index: -10;
-
-  background: linear-gradient(162.03deg, #eb0cd5 27.1%, #e52727 60.96%);
-  transform: rotate(-90deg);
-  border-radius: 50%;
-}
-
-.sidebar > div:nth-of-type(1) h3 {
-  font-size: 20px;
-}
-
-.sidebar > div:nth-of-type(1) h4 {
-  font-size: 14px;
-}
-
-.profile {
-  height: 6.25rem;
-  width: 6.25rem;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.profile img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.sidebar > nav {
-  height: 100%;
-  width: 100%;
-}
-.sidebar  nav ul{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 0;
-}
-.sidebar  nav ul a{
-  height: 56px;
-  width: 100%;
-  display: flex;
-  text-decoration: none;
-  /* justify-content: center; */
-  gap: 1rem;
-  align-items: center;
-  background-color: transparent;
-  border-radius: 10px;
-  font-size: 1rem;
-  padding-left: 1rem;
-  color: white;
-}
-.sidebar  nav ul a:focus{
-  background-color: white;
-  color: black;
-}
-/* .sidebar > div:nth-of-type(3){
-  width: 100%;
-  height: 100%;
-} */
-
-nav.navbar {
-  min-width: 1088px;
-  height: 80px;
-  display: flex;
-  padding-inline: 2rem;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  isolation: isolate;
-  /* position: relative;
-  z-index: 10; */
-}
-
-nav.navbar div h1 {
-  background-color: #f3ec78;
-  background-image: linear-gradient(183deg, #ff3115, #ffd339);
-  background-size: 30%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  font-size: 3.5rem;
-  font-weight: 700;
-  font-family: "Raleway", sans-serif;
-}
-
-nav.navbar button {
-  background-color: black;
-  color: #a6a6a6;
-  border: none;
-  font-size: 1.5rem;
-}
-
 main {
   display: flex;
   flex-direction: column;
-  /* overflow-y: scroll; */
 }
 
-main > div {
+main>div {
   width: 100%;
   padding-inline: 2rem;
   overflow-y: scroll;
+}
+
+section {
+  margin-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .carousel {
@@ -200,8 +74,8 @@ main > div {
 }
 
 .carousel::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
+  width: 5px;
+  height: 5px;
 }
 
 .heading {
@@ -212,19 +86,17 @@ main > div {
   isolation: isolate;
 }
 
-.heading Link {
+.heading a {
   text-decoration: none;
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
 
 .card {
   width: 373px;
   height: 319px;
-  background: linear-gradient(
-    306.18deg,
-    rgba(0, 0, 0, 0.25) 0%,
-    rgba(255, 255, 255, 0.25) 100%
-  );
+  background: linear-gradient(306.18deg,
+      rgba(0, 0, 0, 0.25) 0%,
+      rgba(255, 255, 255, 0.25) 100%);
   box-shadow: -24px 20px 20px rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(12.5px);
   border-radius: 9px;
@@ -233,7 +105,7 @@ main > div {
   justify-content: space-evenly;
 }
 
-.card > div:nth-of-type(1) {
+.card>div:nth-of-type(1) {
   padding: 1rem;
 }
 
@@ -248,7 +120,7 @@ main > div {
   font-size: 40px;
 }
 
-.card-description > div {
+.card-description>div {
   width: 150px;
   height: 40px;
   display: grid;
@@ -257,7 +129,7 @@ main > div {
   background: linear-gradient(180deg, #00f0ff 0%, #0075ff 100%);
 }
 
-.card-description > div button {
+.card-description>div button {
   width: 148px;
   height: 38px;
   background-color: black;
@@ -266,13 +138,6 @@ main > div {
   transition: all 0.3s ease-in;
 }
 
-.card-description > div button:hover {
+.card-description>div button:hover {
   background-color: transparent;
-}
-
-section {
-  margin-block: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
 }

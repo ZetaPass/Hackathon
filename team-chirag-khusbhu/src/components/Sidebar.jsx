@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import styles from "./sidebar.module.css"
 
 function Sidebar() {
   return (
     <>
-      <aside className="sidebar">
+      <aside className={styles.sidebar}>
         <div>
-          <div className="profile">
+          <div className={styles.profile}>
             <img
               src="https://images.pexels.com/photos/6918619/pexels-photo-6918619.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
               alt="human"
