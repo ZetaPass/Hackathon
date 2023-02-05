@@ -17,7 +17,7 @@ function Sidebar() {
 
         <nav>
           <ul>
-            <Link to="/">
+            <Link to="/" active>
               <i class="ri-home-4-fill"></i>
               <span>Home</span>
             </Link>

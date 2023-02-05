@@ -17,14 +17,15 @@ export default function App(){
       <Sidebar/>
       <main>
         <Navbar/>
+        <div>
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/events' element={<Events/>} />
           <Route path='/courses' element={<Courses/>} />
           <Route path='/blogs' element={<Blogs/>} />
           <Route path="*" element={<NotFound />} />
-
         </Routes>
+        </div>
       </main>
     </>
   )

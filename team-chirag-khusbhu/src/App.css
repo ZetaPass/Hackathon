@@ -6,7 +6,7 @@ body {
 
 #root {
   width: 1440px;
-  min-height: 982px;
+  height: 982px;
   background-color: black;
   font-family: "Red Rose", cursive;
   color: white;
@@ -160,13 +160,13 @@ nav.navbar {
 
 nav.navbar div h1 {
   background-color: #f3ec78;
-  background-image: linear-gradient(180deg, #ff3115, #ffd339);
+  background-image: linear-gradient(183deg, #ff3115, #ffd339);
   background-size: 30%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
 }
@@ -181,11 +181,13 @@ nav.navbar button {
 main {
   display: flex;
   flex-direction: column;
+  /* overflow-y: scroll; */
 }
 
 main > div {
   width: 100%;
   padding-inline: 2rem;
+  overflow-y: scroll;
 }
 
 .carousel {
