@@ -8,12 +8,12 @@ import {
 import UserDashboard from "./pages/UserDashboard";
 
 function App() {
-  const action = useNavigationType();
+  const action = useNavigationType(); // Returns PUSH, POP, or REPLACE
   const location = useLocation();
   const pathname = location.pathname;
 
   useEffect(() => {
-    if (action !== "POP") {
+    if (action !== "POP") { // Prevents scroll to top on browser back button
       window.scrollTo(0, 0);
     }
   }, [action, pathname]);
